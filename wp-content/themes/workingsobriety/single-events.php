@@ -14,7 +14,7 @@ get_header(); ?>
 while ( have_posts() ) : the_post();
 ?>
 
-<section class="main-big-image inner-title">
+<section class="main-big-image inner-title events-header">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-8">
@@ -31,12 +31,13 @@ while ( have_posts() ) : the_post();
         <div class="row">
             <div class="col-sm-4 hidden-xs">
 
+                <?php $images = get_field('images'); if( $images ): ?>
                 <div class="sidebar-content">
-                    <img src="img/img-rel-1.jpg" class="img-responsive" />
-                    <img src="img/img-rel-2.jpg" class="img-responsive" />
-                    <img src="img/img-rel-3.jpg" class="img-responsive" />
-                    <img src="img/img-rel-4.jpg" class="img-responsive" />
+                    <?php foreach( $images as $image ): ?>
+                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive" />
+                    <?php endforeach; ?>
                 </div>
+                <?php endif; ?>
 
             </div>
             <div class="col-sm-8 col-xs-12">

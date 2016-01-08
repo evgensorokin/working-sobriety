@@ -96,6 +96,7 @@ header .collapse-menu{display: none;}
 
 /* main big image */
 .main-big-image{background-position: center;background-repeat: no-repeat;background-size: cover;padding: 150px 0;}
+.main-big-image.events-header{background-image: url("img/main-big-image.png")}
 .main-big-image h1{font-family: 'ProximaNova-Bold';font-size: 52px;line-height: 52px;color: #fff;}
 .main-big-image h1 strong{font-family: 'Sorts Mill Goudy', serif;font-weight: normal;background-color: #5A3F76;display: inline-block;padding: 5px 10px;font-style: italic;}
 .main-big-image p{font-family: 'Sorts Mill Goudy', serif;font-size: 25px;line-height: 32px;padding: 20px 0;color: #fff;}
@@ -111,8 +112,8 @@ header .collapse-menu{display: none;}
 
 /* main big image inner title */
 .main-big-image.inner-title{padding: 40px 0 100px;}
-.main-big-image.inner-title h1{font-size: 31px;font-family: 'ProximaNova-Regular';text-transform: uppercase;display: inline-block;padding: 5px 25px;
-    background-color: #6D6D6D;line-height: 41px;}
+.main-big-image.inner-title h1{font-size: 33px;font-family: 'ProximaNova-Regular';display: inline-block;padding: 5px 25px;
+    background-color: #6D6D6D;line-height: 41px;margin-left: 10px;}
 @media (max-width:767px){
     .main-big-image.inner-title{padding: 20px 0 80px;}
     .main-big-image.inner-title h1{font-size: 24px;padding: 5px 15px;line-height: 28px;}
@@ -232,7 +233,35 @@ header .collapse-menu{display: none;}
     .content-section .row-people .div-desc p a{font-size: 14px;}
 }
 
-/* footer */
+/* contact page */
+.contact-page .row{margin: 0;}
+.contact-form{margin: 35px 50px;}
+.contact-form .form-control{font-size: 16px;color: #2d2d2d;padding: 10px 20px;line-height: 18px;height: 55px;border-radius: 10px;margin-bottom: 20px;
+border: none;width: 100%;clear: both;background-color: #DADADA;}
+.contact-form textarea.form-control{height: 200px;resize: none;}
+.contact-form .form-control:focus{outline: none;}
+::-webkit-input-placeholder{font-size: 16px;color: #2d2d2d;}
+:-moz-placeholder{font-size: 16px;color: #2d2d2d;}
+::-moz-placeholder{font-size: 16px;color: #2d2d2d;}
+:-ms-input-placeholder{font-size: 16px;color: #2d2d2d;}
+.contact-form .form-control.wpcf7-not-valid{background-color: #f2a8a3;}
+.contact-form .btn-submit{border-radius: 10px;height: 55px;line-height: 21px;font-size: 21px;color: #fff;background-color: #A68EC0;border: none;
+text-transform: uppercase;text-align: center;width: 100%;}
+.contact-form .btn-submit:focus{outline: none;}
+.contact-form .btn-submit span{color: #fff;margin-left: 20px;}
+.contact-form .wpcf7-not-valid-tip, .contact-form .wpcf7-validation-errors, .contact-form .ajax-loader{display: none !important;}
+
+.map-address{position: relative;top: -25px;margin-bottom: -25px;border-radius: 10px;margin-left: 20px;}
+.map-address .map{width: 100%;height: 340px;border-top-left-radius: 10px;border-top-right-radius: 10px;}
+.map-address .map img{max-width: inherit !important;}
+.map-address .address{border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;background-color: #78589B;padding: 30px 15px;}
+.map-address .address p{font-size: 20px;line-height: 24px;color: #fff;font-family: 'Sorts Mill Goudy';padding-bottom: 10px;}
+.map-address .address p:last-child{padding-bottom: 0;}
+.map-address .address p br{display: none;}
+.map-address .address strong{font-size: 17px;color: #bc98e3;display: block;font-family: 'ProximaNova-Regular';font-weight: normal;}
+.map-address .address a{font-size: 17px;color: #bc98e3;font-family: 'ProximaNova-Regular';}
+
+    /* footer */
 footer{background-color: #fff;border-top: 1px solid #DADADA;padding: 40px 0;}
 footer ul{margin: 14px 0;}
 footer ul li{padding: 0 10px;display: inline-block;position: relative;margin: 0 -2px;}
