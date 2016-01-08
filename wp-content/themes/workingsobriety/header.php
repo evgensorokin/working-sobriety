@@ -31,7 +31,7 @@
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="img-responsive" /></a>
 			</div>
 			<div class="col-sm-8 col-xs-4">
-				<span class="button-menu pull-right visible-xs"></span>
+				<span class="button-menu pull-right visible-xs"><img src="<?php echo get_template_directory_uri(); ?>/img/menu.svg" /></span>
 
                 <?php
                 wp_nav_menu( array(

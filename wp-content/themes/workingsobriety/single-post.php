@@ -14,7 +14,7 @@ get_header(); ?>
 while ( have_posts() ) : the_post();
     ?>
     <?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
-    <section class="main-big-image inner-title" style="background-image:url('<?= $feat_image;?>')">
+    <section class="main-big-image inner-title" <?php if(!empty($feat_image)) : ?>style="background-image:url('<?= $feat_image;?>')" <?php endif; ?>>
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-8">

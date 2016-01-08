@@ -23,7 +23,7 @@ while ( have_posts() ) : the_post();
     <section class="content-section contact-page">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-md-4 col-sm-6">
 
                     <div class="map-address">
                         <?php $location = get_field('google_map'); if( !empty($location) ): ?>
@@ -38,7 +38,7 @@ while ( have_posts() ) : the_post();
 
                 </div>
 
-                <div class="col-sm-8">
+                <div class="col-md-8 col-sm-6">
 
                     <div class="contact-form">
 
